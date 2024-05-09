@@ -18,15 +18,15 @@ app.use(express.json()); // Add this line to parse JSON request bodies
 //     }
 //   });
 
-  app.get("/test-2", async (req, res) => {
-    try {
+  // app.get("/test-2", async (req, res) => {
+  //   try {
 
-      res.json('test');
-    } catch (error) {
-      console.error("Error fetching table data:", error);
-      res.status(500).json({ error: "Internal server error" });
-    }
-  });
+  //     res.json('test');
+  //   } catch (error) {
+  //     console.error("Error fetching table data:", error);
+  //     res.status(500).json({ error: "Internal server error" });
+  //   }
+  // });
 
 // Start the server
 const PORT = process.env.PORT || 5001;
